@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" style="background:#ededed">
+<head>
+	<meta charset="UTF-8">
+	<!-- 同比缩放标签 ,最大缩放比,最小缩放比,禁止用户缩放-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<script src="js/rem.js"></script>
+</head>
+<body>
+	<div class="soak_content ovw pad_b">
+		<h3>经典小米海参粥</h3>
+		<p>2017-02-19 10:39</p>
+		<div class="pic">
+			<img src="images/pic1.png" alt="">
+		</div>
+	</div>
+
+	<!-- 步骤 -->
+	<ul class="cuisine_step mar_b">
+		<li class="bor_b">
+			<div class="step"><i></i><span>步骤 1</span></div>
+			<p>首先先将菠萝切一半，用刀子将菠萝肉取出切成小粒，菠萝壳挖成船型即可；</p>
+		</li>
+		<li class="bor_b">
+			<div class="step"><i></i><span>步骤 2</span></div>
+			<p>鲜马蹄和南瓜都去皮后切成小粒，芹菜和海参切丁，圆葱切成小粒；</p>
+		</li>
+		<li class="bor_b">
+			<div class="step"><i></i><span>步骤 3</span></div>
+			<p>锅内烧热水，将南瓜粒和马蹄粒放入烫制，待烫到七分熟时加入芹菜粒和海参丁烫制一下捞出控</p>
+		</li>
+		<li class="bor_b">
+			<div class="step"><i></i><span>步骤 4</span></div>
+			<p>炒锅烧热加入橄榄油，将打散的山鸡蛋倒入进行翻炒，加入圆葱粒进行翻炒出香气；</p>
+		</li>
+		<li>
+			<div class="step"><i></i><span>步骤 5</span></div>
+			<p>随后加入蒸好的白米饭进行翻炒，将菠萝粒加入其中翻炒一下，最后将南瓜粒、马蹄粒、芹菜粒加入其中，加入盐和白糖小火翻炒均匀装入菠萝</p>
+		</li>
+	</ul>
+	
+
+	<!-- 推荐 -->
+	<dl class="soak_comm ovw mar_b cuis_lb">
+		<dt>
+			<img src="images/line.png" alt="">
+			<span>推荐</span>
+		</dt>
+
+		<dd class="ovw">
+			<div class="swiper-container lb">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide blue-slide">
+						<img src="images/pic2.png" alt="">
+						<p class="cui_name">海参捞饭</p>
+					</div>
+					<div class="swiper-slide red-slide">
+						<img src="images/pic3.png" alt="">
+						<p class="cui_name">海参寿司</p>
+					</div>
+
+					<div class="swiper-slide orange-slide">
+						<img src="images/pic2.png" alt="">
+						<p class="cui_name">海参捞饭</p>
+					</div>
+
+					<div class="swiper-slide green-slide">
+						<img src="images/pic3.png" alt="">
+						<p class="cui_name">海参寿司</p>
+					</div>
+				</div>
+			</div>
+		</dd>
+	</dl>
+
+
+	<!-- 泡发心得 -->
+	<dl class="soak_comm ovw">
+		<dt>
+			<img src="images/line.png" alt="">
+			<span>厨艺分享</span>
+		</dt>
+
+		<dd class="ovw">
+			<div class="fl user_head">
+				<img src="images/user_head.png" alt="">
+			</div>
+			<div class="fr comm_cont  bor_b">
+				<p class="name">
+					<span>飞鸟</span>
+					<span class="time fr">2017-02-11  12:00</span>
+				</p>
+				<span class="cont">不错，支持一下不错，支持一下不错，支持一下不错，支持一下不错，支持一下不错，支持一下</span>
+			</div>
+		</dd>
+
+		<dd class="ovw">
+			<div class="fl user_head">
+				<img src="images/user_head1.png" alt="">
+			</div>
+			<div class="fr comm_cont  bor_b">
+				<p class="name">
+					<span>飞鸟</span>
+					<span class="time fr">2017-02-11  12:00</span>
+				</p>
+				<span class="cont">不错，支持一下不错，支持一下不错，支持一下不错，支持一下不错，支持一下不错，支持一下</span>
+			</div>
+		</dd>
+
+		<dd class="ovw">
+			<div class="fl user_head">
+				<img src="images/user_head2.png" alt="">
+			</div>
+			<div class="fr comm_cont">
+				<p class="name">
+					<span>飞鸟</span>
+					<span class="time fr">2017-02-11  12:00</span>
+				</p>
+				<span class="cont">不错，支持一下不错，支持一下不错，支持一下不错，支持一下不错，支持一下不错，支持一下</span>
+			</div>
+		</dd>
+	</dl>
+
+	<div class="soak_load mar_bot bor_t">
+		<img src="images/load.png" alt="">
+		<span>加载更多</span>
+	</div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script>
+	$(function(){
+		var mySwiper = new Swiper('.swiper-container',{
+			loop : true,
+			slidesPerView : 2.7,
+			loopedSlides :1,
+			spaceBetween:15,
+		});
+	})
+	
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>食客分享</title>
+		<script type="text/javascript" src="js/flexible.js"></script>
+		<meta content="telephone=no,email=no" name="format-detection">
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	</head>
+
+	<body id="diners_share">
+		<header>
+			<dl>
+
+				<dd>最新</dd>
+				<span class="angel"><img src="img/topimg2.png"/></span>
+			</dl>
+			<dl class="unclick">
+				<dd>精华</dd>
+				<span class="angel"><img src="img/topimg2.png"/></span>
+			</dl>
+			<dl class="unclick">
+				<dd>我的</dd>
+				<span class="angel"><img src="img/topimg2.png"/></span>
+			</dl>
+		</header>
+		<div id="share_con">
+			<div class="comlist">
+				<div class="top">
+					<span><img src="img/tx1.png"/></span>
+					<div class="center">
+						<div class="dl_top">
+							<h3>发海参的小火柴</h3>
+							<dl>
+								<dt>
+									<img src="img/dz.png"/>
+									<img src="img/dz1.png" class="click"/>
+								</dt>
+								<dd>100</dd>
+								<dd class="click">100</dd>
+							</dl>
+						</div>
+						<i class="colTip blue">泡发技巧</i>
+						<p class="font_28 col_3">海参好吃，但是泡发需要技巧，那么如何泡发 海参?今天本大厨今天...</p>
+						<em class="time">20分钟前</em>
+					</div>
+				</div>
+				<div class="top">
+					<span><img src="img/tx4.png"/></span>
+					<div class="center">
+						<div class="dl_top">
+							<h3>海参哥</h3>
+							<dl>
+								<dt>
+									<img src="img/dz.png"/>
+									<img src="img/dz1.png" class="click"/>
+								</dt>
+								<dd>100</dd>
+								<dd class="click">100</dd>
+							</dl>
+							
+								
+							
+						</div>
+						<i class="colTip orange">泡发技巧</i>
+						<p class="font_28 col_3">教您健康吃海参，简单又营养的海参做法，养 生必备！</p>
+						<em class="time">20分钟前</em>
+					</div>
+				</div>
+				<div class="top">
+					<span><img src="img/tx4.png"/></span>
+					<div class="center">
+						<div class="dl_top">
+							<h3>海参哥</h3>
+							<dl>
+								<dt>
+									<img src="img/dz.png"/>
+									<img src="img/dz1.png" class="click"/>
+								</dt>
+								<dd>100</dd>
+								<dd class="click">100</dd>
+							</dl>
+							
+								
+							
+						</div>
+						<i class="colTip orange">泡发技巧</i>
+						<p class="font_28 col_3">教您健康吃海参，简单又营养的海参做法，养 生必备！</p>
+						<em class="time">20分钟前</em>
+					</div>
+				</div>
+
+			</div>
+			<p class="font_24 col_6 center">您的分享，可能会帮助到很多人...</p>
+		</div>
+		<footer>
+			<dl>
+				<dt><img src="img/heart.png"/></dt>
+				<dd>我要分享</dd>
+			</dl>
+		</footer>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js">
+		</script>
+		<script type="text/javascript">
+			$(function() {
+				$('#diners_share header dl').each(function() {
+					$('#diners_share header dl').click(function() {
+						$('#diners_share header dl').addClass('unclick');
+						$(this).removeClass('unclick');
+
+					})
+				});
+				$('#share_con .comlist .top .center dl').click(function(){
+
+					$(this).find('img').toggle();
+					$(this).find('dd').toggle();
+				})
+			})
+		</script>
+	</body>
+
+</html>

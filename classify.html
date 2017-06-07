@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>分类</title>
+		<script type="text/javascript" src="js/flexible.js"></script>
+		<meta content="telephone=no,email=no" name="format-detection">
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+	</head>
+
+	<body id="classify">
+		<aside class="left">
+			<ul>
+				<li>全部分类</li>
+				<li class="addboder">淡干海参</li>
+				<li>即食海参</li>
+				<li>速发海参</li>
+				<li>优选燕窝</li>
+				<li>鲜食海产</li>
+				<li>搭配食材</li>
+				<li>海参礼品卡</li>
+				<li>燕窝礼品卡</li>
+				<li>燕窝礼品卡</li>
+				<li>燕窝礼品卡</li>
+			</ul>
+
+		</aside>
+		<aside class="right">
+			<ul>
+				<li>
+					<dl>
+						<dt><img src="img/tu3.png"/></dt>
+						<dd class="title">大连晓芹淡干海...</dd>
+						<dd>¥888</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt><img src="img/tu4.png"/></dt>
+						<dd class="title">大连晓芹淡干海...</dd>
+						<dd>¥888</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt><img src="img/tu5.png"/></dt>
+						<dd class="title">大连晓芹淡干海...</dd>
+						<dd>¥888</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt><img src="img/tu6.png"/></dt>
+						<dd class="title">大连晓芹淡干海...</dd>
+						<dd>¥888</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt><img src="img/tu7.png"/></dt>
+						<dd class="title">大连晓芹淡干海...</dd>
+						<dd>¥888</dd>
+					</dl>
+				</li>
+				<li>
+					<dl>
+						<dt><img src="img/tu8.png"/></dt>
+						<dd class="title">大连晓芹淡干海...</dd>
+						<dd>¥888</dd>
+					</dl>
+				</li>
+
+			</ul>
+		</aside>
+		<footer>
+			<dl>
+				<a href="index.html">
+					<dt><img src="img/sy1.png"></dt>
+					<dd>首页</dd>
+				</a>
+			</dl>
+			<dl>
+				<a href="classify.html">
+					<dt><img src="img/fl2.png"></dt>
+					<dd class="addCol">分类</dd>
+				</a>
+			</dl>
+			<dl>
+				<a href="shopCar.html">
+					<dt><img src="img/car1.png"></dt>
+					<dd>购物车</dd>
+				</a>
+			</dl>
+			<dl>
+				<a href="member.html">
+					<dt><img src="img/per1.png"></dt>
+					<dd>个人</dd>
+				</a>
+			</dl>
+		</footer>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js">
+		</script>
+		<script type="text/javascript" src="js/swiper.min.js">
+		</script>
+		<script type="text/javascript">
+			$(function() {
+				var leftH = $(window).height() - $('footer').height();
+				$('#classify aside.left').height(leftH);
+				$('#classify aside.right').height(leftH);
+				$('#classify aside.left ul li').each(function() {
+					$('#classify aside.left ul li').click(function() {
+						$('#classify aside.left ul li').removeClass('addboder');
+						$(this).addClass('addboder');
+					})
+				})
+
+			})
+		</script>
+	</body>
+
+</html>

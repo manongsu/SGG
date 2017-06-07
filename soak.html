@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" style="background:#ededed">
+<head>
+	<meta charset="UTF-8">
+	<!-- 同比缩放标签 ,最大缩放比,最小缩放比,禁止用户缩放-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/public.css">
+	<script src="js/rem.js"></script>
+</head>
+<body>
+	<ul class="apply ovw soak mar_b">
+		<li class="pad">
+			<span>选择门店</span>
+			<div class="fr">
+				<span class="font_c">门店一</span>
+				<img src="images/rt.png" alt="">
+			</div>
+		</li>
+		<li class="pad">
+			<span>商品名称</span>
+			<input class="fr font_c" type="text" placeholder="请输入商品名称"></input>
+		</li>
+		<li class="pad">
+			<span>口感</span>
+			<div class="fr">
+				<span class="font_c">适中</span>
+				<img src="images/rt.png" alt="">
+			</div>
+		</li>
+		<li class="pad bg_col">
+			<span>数量</span>
+		</li>
+		<li class="pad so_boxes">
+			<span>盒</span>
+			<div class="fr">
+				<i class="reduce">–</i>
+				<span class="font_c soak_num">1</span>
+				<i class="add">+</i>
+			</div>
+		</li>
+		<li class="pad so_boxes">
+			<span>根</span>
+			<div class="fr">
+				<i class="reduce_a">–</i>
+				<span class="font_c soak_nums">1</span>
+				<i class="add_a">+</i>
+			</div>
+		</li>
+	</ul>
+	
+	<ul class="apply ovw soak mar_b">
+		<li class="pad">
+			<span>提货方式</span>
+			<div class="fr">
+				<span class="font_c">到店自提</span>
+				<img src="images/rt.png" alt="">
+			</div>
+		</li>
+		<li class="pad">
+			<span>领取时间</span>
+			<div class="fr">
+				<span class="font_c">点击选择日期</span>
+				<img src="images/rt.png" alt="">
+			</div>
+		</li>
+		<li class="pad require"> 
+			<span class="fl">特殊要求</span>
+			<textarea name="" id="" cols="30" rows="5" ></textarea>
+		</li>
+	</ul>
+	<a class="soak_sub" href="#">提交</a>
+
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script>
+		$(function(){
+			var num=parseInt($(".soak_num").text());
+			console.log(num);
+
+			// // 减
+			$(".reduce").click(function(){
+				if(num==1){
+					$(this).css("color","#FFF").css("background","#ededed").css("borderColor","#ededed");
+					return;
+				}else{
+					num--;
+					$(".soak_num").text(num);
+					
+				}
+			});
+			// // 加
+			$(".add").click(function(){
+				num++;
+				$(".soak_num").text(num);
+				
+				$(".reduce").css("color","#999").css("background","").css("borderColor","#e5e5e5");
+			});
+
+	// ===========================
+			var nums=parseInt($(".soak_nums").text());
+			// // 减
+			$(".reduce_a").click(function(){
+				if(nums==1){
+					$(this).css("color","#FFF").css("background","#ededed").css("borderColor","#ededed");
+					return;
+				}else{
+					nums--;
+					$(".soak_nums").text(nums);
+					
+				}
+			});
+
+			// // 加
+			$(".add_a").click(function(){
+				nums++;
+				$(".soak_nums").text(nums);
+				
+				$(".reduce_a").css("color","#999").css("background","").css("borderColor","#e5e5e5");
+			});
+		})
+		
+
+	</script>
+</body>
+</html>

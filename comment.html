@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" style="background:#ededed">
+<head>
+	<meta charset="UTF-8">
+	<!-- 同比缩放标签 ,最大缩放比,最小缩放比,禁止用户缩放-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/public.css">
+	<script src="js/rem.js"></script>
+</head>
+<body>
+	<div class="mar_b1">
+		<dl class="comment mar_b">
+			<dt>
+				<img src="images/pic_k.png" alt="">
+				<span>帝王海参</span>
+			</dt>
+			<dd class="ovw">
+				<textarea name="" id="" class="txt" cols="30" rows="6" placeholder="填写评论，帮助大家做选择" maxlength="200"></textarea>
+				<span><i class="change_num">0</i>/200</span>
+			</dd>
+		</dl>
+
+		<dl class="comment mar_b">
+			<dt>
+				<img src="images/pic_k.png" alt="">
+				<span>帝帝王超级海参</span>
+			</dt>
+			<dd class="ovw">
+				<textarea name="" id="" class="txt" cols="30" rows="6" placeholder="填写评论，帮助大家做选择" maxlength="200"></textarea>
+				<span><i class="change_num">0</i>/200</span>
+			</dd>
+		</dl>
+	</div>
+	
+
+
+
+	<a class="apply_sub" href="#">提交评论</a>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+	<script>
+	$(function(){
+		 $(".txt").keyup(function() {
+            var length = this.value.length;
+            if (length >= 200) {
+               $(this).next().find(".change_num").text(200);
+            } else {
+                $(this).next().find(".change_num").text(length);
+            }
+
+        });
+    	})
+	
+	</script>
+</body>
+</html> 

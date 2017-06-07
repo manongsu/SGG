@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>朋友的券</title>
+		<script type="text/javascript" src="js/flexible.js"></script>
+		<meta content="telephone=no,email=no" name="format-detection">
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+
+	</head>
+
+	<body id="fri_q">
+		<header>
+			<a><img src="img/btn_yq.png"></a>
+		</header>
+		<div id="fri_content">
+			<aside class="top">
+				<dl>
+					<dt>56</dt>
+					<dd><img src="img/cy.png" /></dd>
+				</dl>
+				<dl>
+					<dt>2000</dt>
+					<dd><img src="img/jf.png" /></dd>
+				</dl>
+			</aside>
+			<aside class="cy_con">
+				<ul>
+					<li>
+						<dl>
+							<dt><img src="img/hy1.png"/></dt>
+							<dd>
+								<h3>微尘</h3>
+								<p><img src="img/jhy.png" />银卡会员</p>
+							</dd>
+						</dl>
+						<div class="right">
+							<h3>100</h3>
+							<p>MM </p>
+						</div>
+					</li>
+					<li>
+						<dl>
+							<dt><img src="img/hy2.png"/></dt>
+							<dd>
+								<h3>微尘</h3>
+								<p><img src="img/yhy.png" />金卡会员</p>
+							</dd>
+						</dl>
+						<div class="right">
+							<h3>100</h3>
+							<p>参公馆赠予积分 </p>
+						</div>
+					</li>
+					<li>
+						<dl>
+							<dt><img src="img/hy3.png"/></dt>
+							<dd>
+								<h3>微尘</h3>
+								<p><img src="img/zs.png" />钻石会员</p>
+							</dd>
+						</dl>
+						<div class="right">
+							<h3>100</h3>
+							<p>参公馆赠予积分 </p>
+						</div>
+					</li>
+					<li>
+						<dl>
+							<dt><img src="img/hy1.png"/></dt>
+							<dd>
+								<h3>微尘</h3>
+								<p><img src="img/jhy.png" />银卡会员</p>
+							</dd>
+						</dl>
+						<div class="right">
+							<h3>100</h3>
+							<p>MM </p>
+						</div>
+					</li>
+				</ul>
+			</aside>
+		</div>
+		<div id="shandow">
+
+		</div>
+		<aside class="box">
+			<p><img src="img/fx.png" /></p>
+			<ul>
+				<li>
+					<a><img src="img/kk.png" /></a>
+				</li>
+				<li>
+					<a></a><img src="img/kj.png" /></li>
+				<li>
+					<a></a><img src="img/wx.png" /></li>
+				<li>
+					<a></a><img src="img/pyq.png" /></li>
+				<li>
+					<a></a><img src="img/wb.png" /></li>
+			</ul>
+		</aside>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js">
+			
+		</script>
+		<script type="text/javascript">
+			$(function(){
+				$('#shandow').hide();
+				$('#fri_q header a').click(function(){
+					$('#shandow').css('display','block');
+					$('#fri_q aside.box').css('display','block');
+					$('#fri_q aside.box ul li').each(function(){
+						$('#fri_q aside.box ul li').click(function(){
+							$('#shandow').css('display','none');
+					$('#fri_q aside.box').css('display','none');
+						})
+					})
+				})
+			})
+		</script>
+	</body>
+
+</html>

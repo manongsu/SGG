@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" style="background:#ededed">
+<head>
+	<meta charset="UTF-8">
+	<!-- 同比缩放标签 ,最大缩放比,最小缩放比,禁止用户缩放-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<script src="js/rem.js"></script>
+</head>
+<body>
+	<div class="soak_content ovw pad_b">
+		<h3>六招教您识海鲜</h3>
+		<p>2017-02-19 10:39</p>
+		<div class="pic">
+			<img src="images/pic_9.png" alt="">
+		</div>
+	</div>
+
+	<!-- 步骤 -->
+	<ul class="wx_deta mar_b">
+		<li>
+			首先，底足：圈养的海参因为长期使用养殖人员投放的饵料不需要移动，且生活在浅水区域，底足的行动作用下降，吸附力差，变得细长,而野生海刺参一般生长在水深20米左右的海域，通过底足行动来寻找食物，所以底足长得短而粗壮。
+		</li>
+		<li>
+			关于肉质，野生海参因为生长水域深（15到20米），水温低，日照少，生长慢，肉质厚实有弹性，筋宽厚饱满，沉积的营养物质丰富；而圈养的海参生长的快，周期短，肉质松软不紧实，过于软糯（这一点很像三个月出栏的生猪）。 这一点只能有待您买回去自己尝试的口感了！
+		</li>
+	</ul>
+	
+
+	<!-- 推荐 -->
+	<dl class="soak_comm ovw mar_b cuis_lb">
+		<dt>
+			<img src="images/line.png" alt="">
+			<span>推荐</span>
+		</dt>
+
+		<dd class="ovw">
+			<div class="swiper-container lb">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide blue-slide">
+						<img src="images/pic_3.png" alt="">
+						<p class="cui_name">产地鉴别</p>
+					</div>
+					<div class="swiper-slide red-slide">
+						<img src="images/pic_4.png" alt="">
+						<p class="cui_name">加工鉴别</p>
+					</div>
+
+					<div class="swiper-slide orange-slide">
+						<img src="images/pic_3.png" alt="">
+						<p class="cui_name">参龄鉴别</p>
+					</div>
+
+					<div class="swiper-slide green-slide">
+						<img src="images/pic_4.png" alt="">
+						<p class="cui_name">产地鉴别</p>
+					</div>
+				</div>
+			</div>
+		</dd>
+	</dl>
+
+
+	<!-- 泡发心得 -->
+	<dl class="soak_comm ovw">
+		<dt>
+			<img src="images/line.png" alt="">
+			<span>厨艺分享</span>
+		</dt>
+
+		<dd class="ovw">
+			<div class="fl user_head">
+				<img src="images/user_head.png" alt="">
+			</div>
+			<div class="fr comm_cont  bor_b">
+				<p class="name">
+					<span>飞鸟</span>
+					<span class="time fr">2017-02-11  12:00</span>
+				</p>
+				<span class="cont">不错，支持一下不错，支持一下不错，支持一下不错，支持一下不错，支持一下不错，支持一下</span>
+			</div>
+		</dd>
+
+		<dd class="ovw">
+			<div class="fl user_head">
+				<img src="images/user_head1.png" alt="">
+			</div>
+			<div class="fr comm_cont  bor_b">
+				<p class="name">
+					<span>飞鸟</span>
+					<span class="time fr">2017-02-11  12:00</span>
+				</p>
+				<span class="cont">不错，支持一下不错，支持一下不错，支持一下不错，支持一下不错，支持一下不错，支持一下</span>
+			</div>
+		</dd>
+
+		<dd class="ovw">
+			<div class="fl user_head">
+				<img src="images/user_head2.png" alt="">
+			</div>
+			<div class="fr comm_cont">
+				<p class="name">
+					<span>微尘</span>
+					<span class="time fr">2017-02-11  12:00</span>
+				</p>
+				<span class="cont">不错，支持一下不错，支持一下不错，支持一下不错，支持一下不错，支持一下不错，支持一下</span>
+			</div>
+		</dd>
+	</dl>
+
+	<div class="soak_load mar_bot bor_t">
+		<img src="images/load.png" alt="">
+		<span>加载更多</span>
+	</div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script>
+	$(function(){
+		var mySwiper = new Swiper('.swiper-container',{
+			// loop : true,
+			slidesPerView : 2.7,
+			loopedSlides :1,
+			spaceBetween:15,
+		});
+	})
+	
+
+
+</script>
+</body>
+</html>

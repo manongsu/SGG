@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" style="background:#ededed">
+<head>
+	<meta charset="UTF-8">
+	<!-- 同比缩放标签 ,最大缩放比,最小缩放比,禁止用户缩放-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/public.css">
+	<script src="js/rem.js"></script>
+</head>
+<body>
+	<ul class="my_nav ovw">
+		<li class="replace">
+			<span>代发</span>
+			<i></i>
+			<div >
+				<img src="images/icon.png" alt="">
+			</div>
+		</li>
+		<li class="consign">
+			<span class="font_col">寄存</span>
+			<div>
+				<img src="images/icon.png" alt="">
+			</div>
+		</li>
+	</ul>
+
+	<!-- 代发 -->
+	<div class="my_box mar_top">
+		<dl class="so_info mar_b my_info ovw">
+	
+			<dd class="pad mar_t">
+				<span>订单编号 : </span>
+				<i>123456789</i>
+				<i class="finish">已完成</i>
+			</dd>
+			<dd class="pad">
+				<span>品名 : </span>
+				<i>海参A</i>
+			</dd>
+			<dd class="pad">
+				<span>根数 : </span>
+				<i>20根</i>
+			</dd>
+			<dd class="pad">
+				<span>发制日期 : </span>
+				<i>2017.7.20</i>
+			</dd>
+			<dd class="pad">
+				<span>领取日期 : </span>
+				<i>2017.7.26</i>
+			</dd>
+			<dd class="pad">
+				<span>发制要求 : </span>
+				<i>适中</i>
+			</dd>
+			<dt class="schedule ovw">
+				<a href="#">查看泡发进度</a>
+			</dt>
+		</dl>
+
+		<dl class="so_info mar_b my_info ovw">
+		
+			<dd class="pad mar_t">
+				<span>订单编号 : </span>
+				<i>123456789</i>
+				<i class="finish">已完成</i>
+			</dd>
+			<dd class="pad">
+				<span>品名 : </span>
+				<i>海参A</i>
+			</dd>
+			<dd class="pad">
+				<span>根数 : </span>
+				<i>20根</i>
+			</dd>
+			<dd class="pad">
+				<span>发制日期 : </span>
+				<i>2017.7.20</i>
+			</dd>
+			<dd class="pad">
+				<span>领取日期 : </span>
+				<i>2017.7.26</i>
+			</dd>
+			<dd class="pad">
+				<span>发制要求 : </span>
+				<i>适中</i>
+			</dd>
+			<dt class="schedule ovw">
+				<a href="#">查看泡发进度</a>
+			</dt>
+		</dl>
+
+		<dl class="so_info mar_b my_info ovw">
+		
+			<dd class="pad mar_t">
+				<span>订单编号 : </span>
+				<i>123456789</i>
+				<i class="finish">已完成</i>
+			</dd>
+			<dd class="pad">
+				<span>品名 : </span>
+				<i>海参A</i>
+			</dd>
+			<dd class="pad">
+				<span>根数 : </span>
+				<i>20根</i>
+			</dd>
+			<dd class="pad">
+				<span>发制日期 : </span>
+				<i>2017.7.20</i>
+			</dd>
+			<dd class="pad">
+				<span>领取日期 : </span>
+				<i>2017.7.26</i>
+			</dd>
+			<dd class="pad">
+				<span>发制要求 : </span>
+				<i>适中</i>
+			</dd>
+			<dt class="schedule ovw">
+				<a href="#">查看泡发进度</a>
+			</dt>
+		</dl>
+	</div>
+	
+	<!-- 寄存 -->
+	<div class="my_box my_box1 mar_top">
+		<dl class="so_info mar_b my_info ovw">
+	
+			<dd class="pad mar_t">
+				<span>寄存编号 : </span>
+				<i>123456789</i>
+			</dd>
+			<dd class="pad">
+				<span>品名 : </span>
+				<i>海参A</i>
+			</dd>
+			<dd class="pad">
+				<span>根数 : </span>
+				<i>20根</i>
+			</dd>
+			<dd class="pad">
+				<span>寄存日期 : </span>
+				<i>2017.7.20</i>
+			</dd>
+			
+			<dt class="schedule ovw">
+				<a class="tre_soak" href="#" >我要泡发</a>
+				<a class="tre_delivery" href="#">不泡发直接送货</a>
+			</dt>
+		</dl>
+
+		<dl class="so_info mar_b my_info ovw">
+	
+			<dd class="pad mar_t">
+				<span>寄存编号 : </span>
+				<i>123456789</i>
+			</dd>
+			<dd class="pad">
+				<span>品名 : </span>
+				<i>海参A</i>
+			</dd>
+			<dd class="pad">
+				<span>根数 : </span>
+				<i>20根</i>
+			</dd>
+			<dd class="pad">
+				<span>寄存日期 : </span>
+				<i>2017.7.20</i>
+			</dd>
+			
+			<dt class="schedule ovw">
+				<a class="tre_soak" href="#" >我要泡发</a>
+				<a class="tre_delivery" href="#">不泡发直接送货</a>
+			</dt>
+		</dl>
+	</div>
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script>
+	$(function(){
+		$('.my_nav>li').each(function(index){
+			$(this).click(function(){
+				$(".my_nav li").find("div").hide();
+				$(".my_nav li").find("span").addClass("font_col");
+				$(this).find("div").show();
+				$(this).find("span").removeClass("font_col");
+				$('.my_box').eq(index).show().siblings(".my_box").hide();
+			})
+		})
+	})
+
+
+
+	</script>
+</body>
+</html>

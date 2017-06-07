@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" style="background:#ededed">
+<head>
+	<meta charset="UTF-8">
+	<!-- 同比缩放标签 ,最大缩放比,最小缩放比,禁止用户缩放-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/public.css">
+	<script src="js/rem.js"></script>
+</head>
+<body>
+	<dl class="so_info mar_b">
+		<dt class="pad">
+			<img src="images/line.png" alt="">
+			<span>基本信息</span>
+		</dt>
+		<dd class="pad">
+			<span>订单编号 : </span>
+			<i>123456789</i>
+			<i class="finish">已完成</i>
+		</dd>
+		<dd class="pad">
+			<span>品名 : </span>
+			<i>海参A</i>
+		</dd>
+		<dd class="pad">
+			<span>根数 : </span>
+			<i>20根</i>
+		</dd>
+		<dd class="pad">
+			<span>发制日期 : </span>
+			<i>2017.7.20</i>
+		</dd>
+		<dd class="pad">
+			<span>领取日期 : </span>
+			<i>2017.7.26</i>
+		</dd>
+		<dd class="pad">
+			<span>发制要求 : </span>
+			<i>适中</i>
+		</dd>
+	</dl>
+
+	<!-- 进度 -->
+	<dl class="so_info so_schedule ovw">
+		<dt class="pad">
+			<img src="images/line.png" alt="">
+			<span>泡发进度</span>
+		</dt>
+
+		<dd class="ht ovw">
+			<div class="so_line"></div>
+			<div  class="schedule">
+				<h3>
+					清洗海参肚内杂质已完成
+					<i class="circle"></i>
+				</h3>
+				<p>2017-7-8</p>
+				<ul class="so_pic ovw">
+					<li>
+						<img src="images/pic_f.png" alt="">
+					</li>
+					<li>
+						<img src="images/pic_g.png" alt="">
+					</li>
+					<li>
+						<img src="images/pic_h.png" alt="">
+					</li>
+					<li>
+						<img src="images/pic_i.png" alt="">
+					</li>
+				</ul>
+			</div>
+			<div  class="schedule">
+				<h3>
+					清洗海参肚内杂质已完成
+					<i class="circle"></i>
+				</h3>
+				<p>2017-7-8</p>
+				<ul class="so_pic ovw">
+					<li>
+						<img src="images/pic_f.png" alt="">
+					</li>
+					<li>
+						<img src="images/pic_g.png" alt="">
+					</li>
+					<li>
+						<img src="images/pic_h.png" alt="">
+					</li>
+					<li>
+						<img src="images/pic_i.png" alt="">
+					</li>
+				</ul>
+			</div>
+			<div  class="schedule">
+				<h3>
+					清洗海参肚内杂质已完成
+					<i class="circle"></i>
+				</h3>
+				<p>2017-7-8</p>
+				<ul class="so_pic ovw">
+					<li>
+						<img src="images/pic_f.png" alt="">
+					</li>
+					<li>
+						<img src="images/pic_g.png" alt="">
+					</li>
+					<li>
+						<img src="images/pic_h.png" alt="">
+					</li>
+					<li>
+						<img src="images/pic_i.png" alt="">
+					</li>
+				</ul>
+			</div>
+		</dd>
+	</dl>
+<script src="js/jquery-1.11.1.min.js"></script>
+
+<script>
+	$(function(){
+		var ht=$(".ht").height();
+		console.log(ht);
+		$(".so_line").height(ht-20);
+	})
+
+</script>
+</body>
+</html>

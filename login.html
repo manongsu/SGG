@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<script type="text/javascript" src="js/flexible.js"></script>
+		<meta content="telephone=no,email=no" name="format-detection">
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+
+	</head>
+
+	<body id="cgg_login" class="comform">
+		<p><img src="img/cgglogo.png" /></p>
+		<form action="" method="post">
+			<div class="pwd cominpput">
+				<span>
+					<img src="img/loph.png"/>
+				</span>
+				<input type="text" class="mima_dd" name="" id="" value="12346798545" />
+				<i class="clean"><img src="img/logb.png"/></i>
+
+			</div>
+
+			<div class="conpwd cominpput">
+				<span>
+					<img src="img/lock.png"/>
+				</span>
+				<input type="password" name="" id="" value="" placeholder="请输入密码" maxlength="6" />
+
+			</div>
+			<a class="btn">登录</a>
+			<ul class="forget">
+				<li><a><img src="img/loright.png">现在注册</a></li>
+				<li><a>忘记密码？</a></li>
+			</ul>
+
+		</form>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('.clean').click(function() {
+					$(this).prev().val('');
+				})
+			})
+		</script>
+
+	</body>
+
+</html>
